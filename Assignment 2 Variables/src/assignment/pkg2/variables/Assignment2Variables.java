@@ -15,7 +15,8 @@ public class Assignment2Variables {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int age = 16;
+         
+       int age = 16;
         double height = 70;
         String firstName = "Harrison";
         String lastName = "Bui";
