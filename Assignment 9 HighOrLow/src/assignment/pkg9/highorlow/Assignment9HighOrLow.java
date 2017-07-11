@@ -18,7 +18,7 @@ public class Assignment9HighOrLow {
         Scanner keyboard = new Scanner(System.in);
         
         int counter = 1;
-        int secretNumber = (int)(Math.random()*9000+1);
+        int secretNumber = (int)(Math.random()*1000+1);
         
         
         System.out.println("Enter your guess of the secret number!!");
