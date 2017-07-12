@@ -10,26 +10,72 @@ package assignment.pkg2.variables;
  * @author Education Unlimited
  */
 public class Assignment2Variables {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-         
-       int age = 16;
-        double height = 70;
-        String firstName = "Harrison";
-        String lastName = "Bui";
-        boolean AStudent = true;
-        String hobbies = "play golf and video games";
-        String favanime = "Dragon Ball z";
-        
-        
-        
-        System.out.print("My name is " + firstName + " " + lastName + ". ");
-        System.out.println ("I am " + height + " inches tall and I am " + age + " years old.");
-        System.out.print ("My like to " + hobbies + ". ");
-        System.out.println ("My favorite anime is " + favanime);
-    } 
     
+        int age;
+        double height;
+        String firstName;
+        String lastName;
+        boolean AStudent;
+        String phoneNumber;
+
+    public Assignment2Variables(String first, String last, String phone) {
+        firstName = first;
+        lastName = last;
+        phoneNumber = phone;
 }
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public boolean isAStudent() {
+        return AStudent;
+    }
+
+    public void setAStudent(boolean AStudent) {
+        this.AStudent = AStudent;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+}
+         
+        
+        
+        
+        
+    
+
