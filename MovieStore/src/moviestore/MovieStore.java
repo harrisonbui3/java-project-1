@@ -68,28 +68,33 @@ public class MovieStore {
             int yearNumber = checkOutYear;
 
             if (monthNumber == 1 || monthNumber == 3 || monthNumber == 5 || monthNumber == 7 || monthNumber == 8 || monthNumber == 10 || monthNumber == 12) {
-                if (checkOutDay > 31) {
+                if (checkOutYear > 2017) {
                     System.out.println("Error. Invalid Date");
                     addMore = "no";
                     continue;
-                }
-                else if (dueDay > 31) {
-                    if (monthNumber == 12) {
-                        monthNumber = 0;
-                        dueDay -= 31;
-                        yearNumber ++;
-                    }
-                    else {
+                } 
+                else {
                     
-                    dueDay -= 31;
-                }
-                }
-                if (monthNumber > 12) {
-                    monthNumber = 1;
-                    yearNumber += 1;
-                }
-                
+                    
+                    if (checkOutDay > 31 || checkOutDay <= 0 || checkOutMonth <= 0) {
+                        System.out.println("Error. Invalid Date");
+                        addMore = "no";
+                        continue;
+                    } else if (dueDay > 31) {
+                        if (monthNumber == 12) {
+                            monthNumber = 0;
+                            dueDay -= 31;
+                            yearNumber++;
+                        } else {
 
+                            dueDay -= 31;
+                        }
+                    }
+                    if (monthNumber > 12) {
+                        monthNumber = 1;
+                        yearNumber += 1;
+                    }
+                }
             } else if (monthNumber == 2) {
                 if (dueDay > 28) {
                     dueDay -= 28;
@@ -105,7 +110,11 @@ public class MovieStore {
                     dueDay -= 30;
                 }
             }
-
+            if (checkOutDay > 31 || checkOutDay <= 0 || checkOutMonth <= 0) {
+                        System.out.println("\nError. Invalid Date");
+                        addMore = "no";
+                        continue;
+            }
             RentalList entry = new RentalList(fname, lname, video, phoneNumber, checkOutMonth, checkOutDay, checkOutYear, monthNumber, dueDay, yearNumber);
 
             System.out.println("\nEntry # " + counter + "\nVideo: " + entry.getVideoName() + "\nFirst Name: " + entry.getFname() + "\nLast Name: " + entry.getLname() + "\nPhone Number: " + entry.getPhoneNumber());
