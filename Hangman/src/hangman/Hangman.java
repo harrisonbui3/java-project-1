@@ -35,7 +35,7 @@ public class Hangman {
         for (char c : word.toCharArray()) {
             wordList.add(c);
         }
-        System.out.println(wordList);
+        System.out.println("The category is food \n\n");
 
         //Create User's Incorrect Guess Storage
         ArrayList incorrect = new ArrayList();

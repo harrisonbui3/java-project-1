@@ -1,5 +1,16 @@
 cashews
-banana
+bananas
 apples
 celery
 carrots
+oranges
+watermelons
+noodles
+salmon
+lemon
+peaches
+chocholate
+grapefruit
+cantaloupe
+
+
