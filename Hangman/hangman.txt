@@ -12,5 +12,12 @@ peaches
 chocholate
 grapefruit
 cantaloupe
+croissant
+muffin
+fettuccine
+pizza
+cookies
+eggs
+fish
 
 
